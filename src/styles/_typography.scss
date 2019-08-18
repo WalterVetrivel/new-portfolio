@@ -1,0 +1,19 @@
+.section-heading {
+  padding: 1.75rem;
+  background-color: rgba($color-dark, 0.8);
+  border-radius: 50%;
+  color: $color-light;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.paragraph {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,26 @@
+.btn-main {
+  padding: 0.75rem 1.25rem;
+  background-color: $color-primary;
+  color: $color-light;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-family: $font-family;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: $box-shadow;
+
+  &:hover {
+    background-color: lighten($color-primary, 7%);
+    transform: scale(1.05);
+    box-shadow: $box-shadow-large;
+  }
+
+  &:active {
+    background-color: lighten($color-primary, 7%);
+    transform: scale(1);
+    box-shadow: $box-shadow-small;
+  }
+}

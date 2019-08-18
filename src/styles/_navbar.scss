@@ -1,0 +1,72 @@
+.nav {
+  background-color: lighten($color-light, 5%);
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+  box-shadow: $box-shadow-small;
+
+  &-brand {
+    color: $color-primary;
+    padding: 0.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    & > svg {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &-items {
+    list-style: none;
+	display: none;
+	
+	@media only screen and (min-width: 768px) {
+		display: flex;
+	}
+  }
+
+  &-toggle {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: $color-primary;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+	top: 1.2rem;
+	
+	@media only screen and (min-width: 768px) {
+		display: none;
+	}
+  }
+
+  &-item {
+    padding: 0.5rem;
+    display: block;
+    width: 100%;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $color-dark;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+}
+
+.show {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

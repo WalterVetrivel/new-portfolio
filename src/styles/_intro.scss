@@ -1,0 +1,23 @@
+.intro {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 3rem;
+  background-image: url('../images/pattern-light.png');
+  background-attachment: fixed;
+
+  &-heading {
+    padding-left: 3rem;
+    border-left: 1px solid $color-primary-light;
+  }
+
+  &-content {
+    width: 50%;
+    padding-right: 3rem;
+
+    & > .paragraph {
+      line-height: 2;
+    }
+  }
+}

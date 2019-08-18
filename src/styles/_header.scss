@@ -1,0 +1,85 @@
+.hero {
+  min-height: 100vh;
+  background-color: #edf5e1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%2305386b' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23379683' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23005b8c' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%2339a489' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23007fa1' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%233db28e' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%2300a2a9' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%2344bf92' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%233ac4a9' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%234fcd94' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%238ee4a5' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%235cdb95' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 2rem 2.5rem;
+
+  @media only screen and (min-width: 512px) {
+    padding: 2.5rem 3rem;
+  }
+
+  @media only screen and (min-width: 640px) {
+    padding: 2.75rem 3.25rem;
+  }
+
+  @media only screen and (min-width: 992px) {
+    padding: 3rem 5rem;
+  }
+
+  &-content {
+    margin-top: 1rem;
+    transform: translateY(30%);
+
+    @media only screen and (min-width: 512px) {
+      margin-top: 3rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+      margin-top: 5rem;
+    }
+  }
+
+  &-title {
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    @media only screen and (min-width: 640px) {
+      font-size: 2.4rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (min-width: 1280px) {
+      font-size: 3rem;
+    }
+  }
+
+  &-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: lighten($color-dark, 30%);
+
+    @media only screen and (min-width: 640px) {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (min-width: 1280px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &-links {
+    display: flex;
+    align-items: center;
+  }
+
+  &-link {
+    margin-right: 1.2rem;
+  }
+
+  &-github {
+    color: $color-dark;
+    font-size: 2.5rem;
+  }
+}
