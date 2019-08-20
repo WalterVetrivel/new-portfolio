@@ -1,23 +1,60 @@
 .intro {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-  padding: 7rem 3rem;
   background-image: url('../images/pattern-light.png');
   background-attachment: fixed;
+  padding: 5rem 2rem;
+
+  @media only screen and (min-width: 640px) {
+    padding: 5rem 3rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 3rem;
+  }
 
   &-heading {
-    padding-left: 3rem;
-    border-left: 1px solid $color-primary-light;
+    text-align: center;
+    margin-bottom: 2rem;
+    @media only screen and (min-width: 768px) {
+      padding-left: 3rem;
+      margin-bottom: 0;
+    }
   }
 
   &-content {
-    width: 50%;
-    padding-right: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+      padding-right: 3rem;
+      border-right: 1px solid $color-primary-light;
+    }
+  }
 
-    & > .paragraph {
-      line-height: 2;
+  &-text {
+    text-align: justify;
+    margin-bottom: 1rem;
+    width: 100%;
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &-avatar {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid $color-primary-light;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+    order: 1;
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 1.5rem;
+      order: 0;
     }
   }
 }
