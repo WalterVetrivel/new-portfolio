@@ -1,0 +1,31 @@
+.banner {
+  padding: 2rem .5rem;
+
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.5),
+      rgba($color-secondary, 0.7)
+    ),
+    url(../images/banner.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    padding: 3rem;
+  }
+
+  &-text {
+    font-size: 1.3rem;
+    color: $color-light;
+    margin-bottom: 1rem;
+
+    @media only screen and (min-width: 640px) {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+      font-size: 2.25rem;
+    }
+  }
+}

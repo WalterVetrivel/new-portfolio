@@ -1,5 +1,11 @@
 import React from 'react';
+import Layout from '../components/layout/layout';
+import Hero from '../components/resume/hero';
 
-const Resume = () => <h1>My Resume</h1>;
+const Resume = () => (
+  <Layout title="Resume">
+    <Hero />
+  </Layout>
+);
 
 export default Resume;

@@ -1,6 +1,10 @@
 .link-cards {
   &-section {
-    background-image: url(../images/pattern-light.png);
+    background-image: linear-gradient(
+        rgba($color-primary-light, 0.2),
+        rgba($color-primary-light, 0.2)
+      ),
+      url(../images/pattern-light-2.png);
     background-attachment: fixed;
     padding: 5rem 2rem;
 
