@@ -1,8 +1,8 @@
 import React from 'react';
-import Avatar from '../images/walter.jpeg';
+import Avatar from '../../images/walter.jpeg';
 
 const Intro = () => (
-  <section class="intro">
+  <section className="intro">
     <div className="intro-heading">
       <h1 className="section-heading">Who am I?</h1>
     </div>
@@ -16,7 +16,7 @@ const Intro = () => (
           can also code in Java and PHP, and I can quickly learn the syntax of a
           new language.
         </p>
-        <p class="paragraph">
+        <p className="paragraph">
           When I'm not furiously typing into Visual Studio Code, I like hanging
           out with friends, playing chess and table tennis.
         </p>

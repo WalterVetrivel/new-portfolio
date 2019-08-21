@@ -1,22 +1,24 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-import Layout from '../components/layout';
-import Hero from '../components/hero';
-import Intro from '../components/intro';
+import Layout from '../components/layout/layout';
+import Hero from '../components/index/hero';
+import Intro from '../components/index/intro';
+import Banner from '../components/index/banner';
+import LinkCards from '../components/index/link-cards';
+import Footer from '../components/layout/footer';
 
 import '../styles/index.scss';
 
 const IndexPage = () => {
-  useEffect(() => {
-    window.addEventListener('scroll', () => {});
-  });
-
   return (
     <Layout>
       <Hero />
       <main>
         <Intro />
+        <Banner />
+        <LinkCards />
       </main>
+      <Footer />
     </Layout>
   );
 };

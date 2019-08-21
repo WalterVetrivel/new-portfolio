@@ -1,6 +1,6 @@
 .section-heading {
   padding: 1.75rem;
-  background-color: rgba($color-dark, 0.8);
+  background-color: darken($color-secondary, 13.5%);
   border-radius: 50%;
   color: $color-light;
   text-transform: uppercase;
@@ -17,4 +17,9 @@
 
 .paragraph {
   margin-bottom: 1rem;
+}
+
+.card-title {
+  text-transform: uppercase;
+  margin-bottom: .5rem;
 }
