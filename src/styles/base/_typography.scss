@@ -1,3 +1,9 @@
+body {
+  color: $color-dark;
+  font-family: $font-family;
+  line-height: $line-height;
+}
+
 .section-heading {
   padding: 1.75rem;
   background-color: darken($color-secondary, 13.5%);
@@ -13,6 +19,11 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+
+  &-light {
+    background-color: $color-light;
+    color: $color-secondary;
+  }
 }
 
 .paragraph {
@@ -21,5 +32,5 @@
 
 .card-title {
   text-transform: uppercase;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }

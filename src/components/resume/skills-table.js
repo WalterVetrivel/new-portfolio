@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SkillsTable = props => (
   <table className="skills-table">
@@ -6,7 +7,10 @@ const SkillsTable = props => (
       {props.skillCategories.map(category => (
         <React.Fragment key={category.name}>
           <tr className="skills-heading">
-            <th colSpan="2">{category.name}</th>
+            <th colSpan="2">
+              <FontAwesomeIcon icon={category.icon} className="mr-h" />
+              {category.name}
+            </th>
           </tr>
           {category.subCategories.map(subCategory => (
             <tr className="skills-subcategory" key={subCategory.name}>

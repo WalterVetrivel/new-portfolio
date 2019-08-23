@@ -15,22 +15,22 @@ const Navbar = () => {
       </Link>
       <ul className="nav-items">
         <li className="nav-item">
-          <Link to="/" className="nav-link">
+          <Link to="/" className="nav-link" activeClassName="active">
             Home
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/resume" className="nav-link">
+          <Link to="/resume" className="nav-link" activeClassName="active">
             Resume
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/portfolio" className="nav-link">
+          <Link to="/portfolio" className="nav-link" activeClassName="active">
             Portfolio
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/journey" className="nav-link">
+          <Link to="/journey" className="nav-link" activeClassName="active">
             Journey
           </Link>
         </li>
