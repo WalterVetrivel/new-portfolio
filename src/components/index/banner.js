@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const Banner = () => (
   <section className="banner">
     <h1 className="banner-text">I build modern, responsive websites</h1>
-    <Link to="/portfolio" className="btn-main">
+    <Link to="/portfolio" className="btn btn-main">
       See my portfolio
     </Link>
   </section>

@@ -1,8 +1,5 @@
-.btn-main,
-.btn-dark {
+.btn {
   padding: 0.75rem 1.25rem;
-  background-color: $color-primary;
-  color: $color-light;
   border: 0;
   outline: none;
   text-decoration: none;
@@ -14,22 +11,32 @@
   box-shadow: $box-shadow;
 
   &:hover {
-    background-color: lighten($color-primary, 7%);
     transform: scale(1.05);
     box-shadow: $box-shadow-large;
   }
 
   &:active {
-    background-color: lighten($color-primary, 7%);
     transform: scale(1);
     box-shadow: $box-shadow-small;
   }
-}
 
-.btn-dark {
-  background-color: $color-dark;
-  &:hover,
-  &:active {
-    background-color: lighten($color-dark, 7%);
+  &-main {
+    background-color: $color-primary;
+    color: $color-light;
+
+    &:hover,
+    &:active {
+      background-color: lighten($color-primary, 7%);
+    }
+  }
+
+  &-dark {
+    background-color: $color-dark;
+    color: $color-light;
+
+    &:hover,
+    &:active {
+      background-color: lighten($color-dark, 7%);
+    }
   }
 }

@@ -11,7 +11,12 @@ import '../styles/style.scss';
 const IndexPage = () => {
   return (
     <Layout title="Home">
-      <Header title="Hi! I'm Walter Selvakumar!" subtitle="I'm a full-stack web developer and programmer." showLinks className="index-hero" />
+      <Header
+        title="Hi! I'm Walter Selvakumar!"
+        subtitle="I'm a full-stack web developer and programmer."
+        showLinks
+        className="index-hero"
+      />
       <main>
         <Intro />
         <Banner />

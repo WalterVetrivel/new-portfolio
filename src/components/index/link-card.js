@@ -14,7 +14,7 @@ const LinkCard = props => (
       <div className="link-card-content">
         <h3 className="link-card-title card-title">{props.linkTitle}</h3>
         <p className="link-card-text">{props.linkText}</p>
-        <Link to={`/${props.linkUrl}`} className="btn-main link-card-link">
+        <Link to={`/${props.linkUrl}`} className="btn btn-main link-card-link">
           View {props.linkUrl}&nbsp;
           <FontAwesomeIcon icon={faArrowRight} />
         </Link>

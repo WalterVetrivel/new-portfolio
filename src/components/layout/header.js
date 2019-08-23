@@ -15,14 +15,14 @@ const Hero = props => {
         ) : null}
         {props.showLinks ? (
           <div className="hero-links">
-            <Link to="/portfolio" className="hero-link btn-main">
+            <Link to="/portfolio" className="hero-link btn btn-main">
               My Portfolio
             </Link>
             <a
               href="https://github.com/WalterVetrivel"
               target="_blank"
               rel="noopener noreferrer"
-              className="hero-github btn-dark"
+              className="hero-github btn btn-dark"
             >
               <FontAwesomeIcon icon={faGithub} />
               Github
