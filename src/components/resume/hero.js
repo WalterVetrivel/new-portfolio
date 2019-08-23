@@ -5,23 +5,27 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'gatsby';
 
 const Hero = props => (
-  <header className="resume-hero">
-    <div className="resume-hero-content">
-      <h1 className="resume-hero-title">Hi! I'm Walter Selvakumar!</h1>
-      <h3 className="resume-hero-subtitle">
-        I'm a full-stack web developer and programmer.
+  <header className="hero resume-hero">
+    <div className="hero-content">
+      <h1 className="hero-title">Welcome to my resume!</h1>
+      <h3 className="hero-subtitle">
+        Get a brief overview of my skills, education and experience.
       </h3>
-      <div className="resume-hero-links">
-        <Link to="/portfolio" className="resume-hero-link btn-main">
+      <p className="hero-subtitle-2">
+        To view samples of my work, visit my portfolio or my Github.
+      </p>
+      <div className="hero-links">
+        <Link to="/portfolio" className="hero-link btn-main">
           My Portfolio
         </Link>
         <a
           href="https://github.com/WalterVetrivel"
           target="_blank"
           rel="noopener noreferrer"
-          className="resume-hero-github"
+          className="hero-github btn-dark"
         >
           <FontAwesomeIcon icon={faGithub} />
+          Github
         </a>
       </div>
     </div>

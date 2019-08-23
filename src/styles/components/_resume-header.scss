@@ -18,4 +18,76 @@
   @media only screen and (min-width: 992px) {
     padding: 3rem 5rem;
   }
+
+  &-content {
+    margin-top: 1rem;
+    transform: translateY(30%);
+
+    @media only screen and (min-width: 512px) {
+      margin-top: 3rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+      margin-top: 5rem;
+    }
+  }
+
+  &-title {
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: $color-light;
+
+    @media only screen and (min-width: 640px) {
+      font-size: 2.4rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (min-width: 1280px) {
+      font-size: 3rem;
+    }
+  }
+
+  &-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: darken($color-light, 10%);
+
+    @media only screen and (min-width: 640px) {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (min-width: 1280px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &-subtitle-2 {
+    color: $color-light;
+    margin-bottom: 1rem;
+  }
+
+  &-links {
+    display: flex;
+    align-items: center;
+  }
+
+  &-link {
+    margin-right: 1.2rem;
+  }
+
+  &-github {
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
 }

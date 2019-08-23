@@ -79,7 +79,8 @@
   }
 
   &-github {
-    color: $color-dark;
-    font-size: 2.5rem;
+    svg {
+      margin-right: 0.5rem;
+    }
   }
 }
