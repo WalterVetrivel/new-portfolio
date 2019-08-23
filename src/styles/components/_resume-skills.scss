@@ -1,0 +1,80 @@
+.skills {
+  padding: 5rem 2rem;
+  background-image: url(../images/pattern-light.png);
+  background-attachment: fixed;
+  background-position: center;
+
+  @media only screen and (min-width: 640px) {
+    padding: 5rem 3rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 7rem 3rem;
+  }
+
+  &-heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color-primary;
+
+    @media only screen and (min-width: 768px) {
+      padding-bottom: 0;
+      border-bottom: 0;
+      padding-right: 3rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &-content {
+    padding-top: 2rem;
+
+    @media only screen and (min-width: 768px) {
+      width: 65%;
+      padding-top: 0;
+      padding-left: 3rem;
+      border-left: 1px solid $color-primary;
+    }
+  }
+
+  &-table {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: $box-shadow;
+    border-spacing: 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    .skills-heading {
+      background-color: $color-primary-light;
+      box-shadow: $box-shadow-small;
+      transform: translate(1px, 1px);
+
+      th {
+        padding: 1rem 1.5rem;
+        text-align: left;
+        text-transform: uppercase;
+      }
+    }
+
+    .skills-subcategory {
+      td {
+        padding: 1rem 1.5rem;
+
+        p:not(:last-child) {
+          margin-bottom: 4px;
+        }
+      }
+
+      &-title {
+        font-weight: 700;
+      }
+
+      &:nth-of-type(odd) {
+        background-color: $color-light;
+      }
+    }
+  }
+}

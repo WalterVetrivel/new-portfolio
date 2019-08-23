@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout/layout';
 import Header from '../components/layout/header';
+import Skills from '../components/resume/skills';
 
 const Resume = () => (
   <Layout title="Resume">
@@ -11,6 +12,7 @@ const Resume = () => (
       showLinks
       className="resume-hero"
     />
+    <Skills />
   </Layout>
 );
 

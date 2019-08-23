@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 
 import { Link } from 'gatsby';
 
@@ -16,16 +17,17 @@ const Hero = props => {
         {props.showLinks ? (
           <div className="hero-links">
             <Link to="/portfolio" className="hero-link btn btn-main">
-              My Portfolio
+              <FontAwesomeIcon icon={faFolderOpen} />
+              <span>My Portfolio</span>
             </Link>
             <a
               href="https://github.com/WalterVetrivel"
               target="_blank"
               rel="noopener noreferrer"
-              className="hero-github btn btn-dark"
+              className="hero-link btn btn-dark"
             >
               <FontAwesomeIcon icon={faGithub} />
-              Github
+              <span>Github</span>
             </a>
           </div>
         ) : null}

@@ -68,8 +68,12 @@
   }
 
   &-subtitle-2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
+
+    @media only screen and (min-width: 992px) {
+      font-size: 1.2rem;
+    }
   }
 
   &-links {
@@ -77,13 +81,22 @@
     align-items: center;
   }
 
-  &-link {
+  &-link:not(:last-of-type) {
     margin-right: 1.2rem;
   }
 
-  &-github {
+  &-link {
     svg {
-      margin-right: 0.5rem;
+      @media only screen and (min-width: 480px) {
+        margin-right: 0.5rem;
+      }
+    }
+
+    span {
+      display: none;
+      @media only screen and(min-width: 480px) {
+        display: inline;
+      }
     }
   }
 }
