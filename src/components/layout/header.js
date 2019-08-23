@@ -14,12 +14,14 @@ const Hero = props => {
         {props.subtitle2 ? (
           <p className="hero-subtitle-2">{props.subtitle2}</p>
         ) : null}
-        {props.showLinks ? (
-          <div className="hero-links">
+        <div className="hero-links">
+          {props.showPortfolioLink ? (
             <Link to="/portfolio" className="hero-link btn btn-main">
               <FontAwesomeIcon icon={faFolderOpen} />
               <span>My Portfolio</span>
             </Link>
+          ) : null}
+          {props.showGithubLink ? (
             <a
               href="https://github.com/WalterVetrivel"
               target="_blank"
@@ -29,8 +31,8 @@ const Hero = props => {
               <FontAwesomeIcon icon={faGithub} />
               <span>Github</span>
             </a>
-          </div>
-        ) : null}
+          ) : null}
+        </div>
       </div>
     </header>
   );

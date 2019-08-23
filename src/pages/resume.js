@@ -11,6 +11,15 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const Resume = () => {
+  const [headerText] = useState({
+    title: `Welcome to my resume!`,
+    subtitle: `Get a brief overview of my skills, education and experience.`,
+    subtitle2: `To view samples of my work, visit my portfolio or my Github.`,
+    showPortfolioLink: true,
+    showGithubLink: true,
+    className: 'resume-hero',
+  });
+
   const [skills] = useState([
     {
       name: 'Programming languages',
@@ -108,11 +117,12 @@ const Resume = () => {
   return (
     <Layout title="Resume">
       <Header
-        title="Welcome to my resume!"
-        subtitle="Get a brief overview of my skills, education and experience."
-        subtitle2="To view samples of my work, visit my portfolio or my Github."
-        showLinks
-        className="resume-hero"
+        title={headerText.title}
+        subtitle={headerText.subtitle}
+        subtitle2={headerText.subtitle2}
+        showPortfolioLink={headerText.showPortfolioLink}
+        showGithubLink={headerText.showGithubLink}
+        className={headerText.className}
       />
       <Skills skills={skills} />
       <Education education={education} />

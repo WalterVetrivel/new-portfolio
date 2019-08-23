@@ -12,7 +12,8 @@ const IndexPage = () => {
   const [headerText] = useState({
     title: `Hi! I'm Walter Selvakumar!`,
     subtitle: `I'm a full-stack web developer and programmer.`,
-    showLinks: true,
+    showPortfolioLink: true,
+    showGithubLink: true,
     className: 'index-hero',
   });
 
@@ -33,7 +34,8 @@ const IndexPage = () => {
       <Header
         title={headerText.title}
         subtitle={headerText.subtitle}
-        showLinks={headerText.showLinks}
+        showPortfolioLink={headerText.showPortfolioLink}
+        showGithubLink={headerText.showGithubLink}
         className={headerText.className}
       />
       <main>
