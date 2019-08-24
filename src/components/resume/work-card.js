@@ -15,7 +15,7 @@ const WorkCard = ({ role }) => (
 
     <div className="work-card-body">
       <p className="work-description">{role.description}</p>
-      <h3 className="work-subtitle">Skill Map</h3>
+      <h3 className="work-subtitle">Skills</h3>
       <div className="work-skills">
         {role.skillMap.map(skill => (
           <p className="work-skill">{skill}</p>

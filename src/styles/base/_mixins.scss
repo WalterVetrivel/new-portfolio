@@ -1,0 +1,22 @@
+@mixin darkHero {
+  .hero-title {
+    color: $color-light;
+  }
+
+  .hero-subtitle {
+    color: darken($color-light, 10%);
+  }
+
+  .hero-subtitle-2 {
+    color: $color-light-2;
+  }
+}
+
+@mixin cardHover {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: $box-shadow-large;
+    filter: brightness(1.02);
+  }
+}

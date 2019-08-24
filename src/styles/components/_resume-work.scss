@@ -46,6 +46,8 @@
       padding-bottom: 2rem;
       background-color: lighten($color-primary-light, 23.5%);
     }
+
+    @include cardHover();
   }
 
   &-role,
@@ -63,7 +65,7 @@
   }
 
   &-organisation {
-    color: $color-secondary;
+    color: lighten($color-dark, 25%);
     font-size: 0.9rem;
   }
 
@@ -76,7 +78,7 @@
   }
 
   &-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: $color-secondary;
   }
 

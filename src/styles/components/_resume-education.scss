@@ -27,6 +27,8 @@
         width: 70%;
       }
     }
+
+    @include cardHover();
   }
 
   &-degree {

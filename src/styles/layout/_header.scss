@@ -1,17 +1,3 @@
-@mixin darkHero {
-  .hero-title {
-    color: $color-light;
-  }
-
-  .hero-subtitle {
-    color: darken($color-light, 10%);
-  }
-
-  .hero-subtitle-2 {
-    color: $color-light-2;
-  }
-}
-
 .hero {
   min-height: 100vh;
   background-attachment: fixed;

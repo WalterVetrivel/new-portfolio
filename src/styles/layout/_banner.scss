@@ -44,8 +44,9 @@
 
 .resume-banner {
   background-image: linear-gradient(
-      rgba($color-dark, 0.5),
-      rgba($color-dark, 0.7)
+      rgba($color-dark, 0.3),
+      rgba($color-dark, 0.3)
     ),
-    url(../images/resume-banner.jpg);
+    url(../images/pattern-dark.png);
+  background-size: initial;
 }
