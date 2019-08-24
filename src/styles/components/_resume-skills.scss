@@ -23,6 +23,8 @@
     }
 
     .skills-subcategory {
+      transition: all 0.3s ease-in-out;
+
       td {
         padding: 1rem 1.5rem;
 
@@ -37,6 +39,11 @@
 
       &:nth-of-type(odd) {
         background-color: lighten($color-primary-light, 23.5%);
+      }
+
+      &:hover {
+        transform: translate(1px, -1px);
+        box-shadow: $box-shadow-large;
       }
     }
   }

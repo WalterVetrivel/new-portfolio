@@ -15,7 +15,7 @@ import {
   faUserGraduate,
 } from '@fortawesome/free-solid-svg-icons';
 
-const Resume = () => {
+const ResumePage = () => {
   const [headerText] = useState({
     title: `Welcome to my resume!`,
     subtitle: `Get a brief overview of my skills, education and experience.`,
@@ -228,4 +228,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default ResumePage;

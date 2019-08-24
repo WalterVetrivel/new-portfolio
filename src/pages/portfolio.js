@@ -16,7 +16,7 @@ import Recipes from '../images/projects/recipes.png';
 import EventOrganiser from '../images/projects/event-organiser.png';
 import Resume from '../images/projects/resume.png';
 
-const Portfolio = () => {
+const PortfolioPage = () => {
   const [headerText] = useState({
     title: `Welcome to my portfolio!`,
     subtitle: `Here, I showcase some of my major professional, academic and side projects.`,
@@ -132,4 +132,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default PortfolioPage;
