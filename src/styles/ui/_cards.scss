@@ -1,5 +1,5 @@
 .card {
-  background-color: $color-light;
+  background-color: lighten($color-light, 5%);
   border-radius: 0.5rem;
   box-shadow: $box-shadow;
 }

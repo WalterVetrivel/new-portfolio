@@ -24,7 +24,6 @@
 
   &-card {
     overflow: hidden;
-    background-color: #fff;
     margin-bottom: 1rem;
 
     &-header,
@@ -35,7 +34,7 @@
 
     &-header {
       padding-top: 2rem;
-      background-color: lighten($color-dark, 75%);
+      background-color: lighten($color-dark, 76%);
     }
 
     &-body {
@@ -89,7 +88,7 @@
   &-skill {
     padding: 0.5rem;
     border-radius: 0.5rem;
-    background-color: lighten($color-dark, 75%);
+    background-color: lighten($color-dark, 76%);
     font-weight: 700;
     color: $color-dark;
     margin-bottom: 0.5rem;
