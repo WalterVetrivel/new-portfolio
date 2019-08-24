@@ -33,11 +33,11 @@ const LinkCards = () => {
   ]);
 
   return (
-    <section className="link-cards-section">
-      <div className="link-cards-heading">
+    <section className="section links">
+      <div className="section-heading-wrapper links-heading">
         <h1 className="section-heading">What I do</h1>
       </div>
-      <div className="link-cards">
+      <div className="section-content links-content">
         {links.map((link, index) => {
           return (
             <LinkCard

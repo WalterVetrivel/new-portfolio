@@ -1,8 +1,8 @@
 .skills {
-  padding: 5rem 2rem;
   background-image: url(../images/pattern-light.png);
-  background-attachment: fixed;
   background-position: center;
+  /* background-attachment: fixed;
+  padding: 5rem 2rem;
 
   @media only screen and (min-width: 640px) {
     padding: 5rem 3rem;
@@ -38,7 +38,7 @@
       padding-left: 3rem;
       border-left: 1px solid $color-primary;
     }
-  }
+  } */
 
   &-table {
     width: 100%;

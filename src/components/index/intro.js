@@ -2,11 +2,11 @@ import React from 'react';
 import Avatar from '../../images/walter.jpeg';
 
 const Intro = props => (
-  <section className="intro">
-    <div className="intro-heading">
+  <section className="section intro">
+    <div className="section-heading-wrapper intro-heading">
       <h1 className="section-heading">Who am I?</h1>
     </div>
-    <div className="intro-content">
+    <div className="section-content intro-content">
       <img src={Avatar} alt="Walter Selvakumar" className="intro-avatar" />
       <div
         className="intro-text"
