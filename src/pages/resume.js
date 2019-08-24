@@ -3,6 +3,8 @@ import Layout from '../components/layout/layout';
 import Header from '../components/layout/header';
 import Skills from '../components/resume/skills';
 import Education from '../components/resume/education';
+import Banner from '../components/layout/banner';
+
 import {
   faTh,
   faLaptop,
@@ -126,6 +128,20 @@ const Resume = () => {
       />
       <Skills skills={skills} />
       <Education education={education} />
+      <Banner className="resume-banner">
+        <h1 className="banner-text mb-0">
+          I have also done some web development and programming courses on{' '}
+          <a
+            href="https://www.udemy.com/user/walter-vetrivel-selvakumar/"
+            target="_blank"
+            className="banner-link"
+            rel="noopener noreferrer"
+          >
+            Udemy
+          </a>
+          .
+        </h1>
+      </Banner>
     </Layout>
   );
 };

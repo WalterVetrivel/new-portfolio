@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'gatsby';
 
 import Layout from '../components/layout/layout';
 import Header from '../components/layout/header';
 import Intro from '../components/index/intro';
-import Banner from '../components/index/banner';
+import Banner from '../components/layout/banner';
 import LinkCards from '../components/index/link-cards';
 
 import '../styles/style.scss';
@@ -40,7 +41,12 @@ const IndexPage = () => {
       />
       <main>
         <Intro introText={introText} />
-        <Banner />
+        <Banner className="index-banner">
+          <h1 className="banner-text">I build modern, responsive websites</h1>
+          <Link to="/portfolio" className="btn btn-main">
+            See my portfolio
+          </Link>
+        </Banner>
         <LinkCards />
       </main>
     </Layout>
