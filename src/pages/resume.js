@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import Layout from '../components/layout/layout';
 import Header from '../components/layout/header';
+import Banner from '../components/layout/banner';
 import Skills from '../components/resume/skills';
 import Education from '../components/resume/education';
-import Banner from '../components/layout/banner';
+import Work from '../components/resume/work';
 
 import {
   faTh,
   faLaptop,
   faServer,
   faCode,
+  faHandsHelping,
+  faUserGraduate,
 } from '@fortawesome/free-solid-svg-icons';
 
 const Resume = () => {
@@ -93,6 +96,10 @@ const Resume = () => {
             'Report writing',
           ],
         },
+        {
+          name: 'Languages',
+          skills: ['English', 'Tamil'],
+        },
       ],
     },
   ]);
@@ -113,6 +120,80 @@ const Resume = () => {
       to: 'April 2016',
       gpa: '7.74/10',
       description: `I learned many of the basics of programming and software development, data structures, algorithms, databases, web technologies, and also developed good organising, administration and leadership skills through being the co-convener of IE CSE Students' Chapter and the placement representative of my class.`,
+    },
+  ]);
+
+  const [work] = useState([
+    {
+      category: 'Technical',
+      icon: faCode,
+      roles: [
+        {
+          role: 'Freelance Web Developer',
+          organisation: 'Various',
+          from: 'Jan 2017',
+          to: 'Present',
+          description: `As a freelance web developer, I've built websites and web applications for people and organisations. My first two projects were for Women In Self Help Action in Lord's Love and Church Growth Association of India, two sister non-profit organisations for which I developed information systems. I have also developed websites for others. Click below to check out my full portfolio.`,
+          skillMap: [
+            'Web Development',
+            'Communication',
+            'Client side',
+            'Server side',
+            'Databases',
+          ],
+          showPortfolioLink: true,
+        },
+      ],
+    },
+    {
+      category: 'Volunteer',
+      icon: faHandsHelping,
+      roles: [
+        {
+          role: 'Administration volunteer at Missionheart',
+          organisation: 'Missionheart, Canberra',
+          from: 'June 2019',
+          to: 'Present',
+          description: `As an admin volunteer, my role is to maintain the volunteer database at Missionheart and to ensure that all the volunteer documentation is up to date. I work on a team with other volunteers and admin personnel. This role provides me with valuable experience in teamwork and in using Microsoft Office 365 online.`,
+          skillMap: [
+            'Administration',
+            'Communication',
+            'Teamwork',
+            'Microsoft Office',
+          ],
+          showPortfolioLink: false,
+        },
+      ],
+    },
+    {
+      category: 'Student Roles',
+      icon: faUserGraduate,
+      roles: [
+        {
+          role: `Co-convener of IE CSE, Students' Chapter`,
+          organisation: 'Mepco Schlenk Engineering College',
+          from: 'July 2015',
+          to: 'March 2016',
+          description: `As the co-convener of IE CSE, I had the responsibility of co-ordinating weekly classroom activities including technical talks, presentations, quizzes, group discussions, etc., and reporting on the events to the faculty and relaying information to students. I also had the opportunity to not only co-ordinate, but organise and conduct several talks and presentations myself with other office bearers.`,
+          skillMap: ['Teamwork', 'Presentation', 'Organising'],
+          showPortfolioLink: false,
+        },
+        {
+          role: `Placement Student Representative`,
+          organisation: `Mepco Schlenk Engineering College`,
+          from: 'January 2015',
+          to: 'March 2016',
+          description: `As the placement student representative of my class, I was responsible for maintaining the student placement related database of my class. I also had to work with other placement representatives to communicate information about job opportunities to students. I also built a web application 'Placement Portal' to streamline the process of collecting student information and relaying job opportunities to students, but due to the college policies and lack of time, this project could not be deployed.`,
+          skillMap: [
+            'Administration',
+            'Teamwork',
+            'Communication',
+            'Web Development',
+            'Microsoft Office',
+          ],
+          showPortfolioLink: false,
+        },
+      ],
     },
   ]);
 
@@ -142,6 +223,7 @@ const Resume = () => {
           .
         </h1>
       </Banner>
+      <Work work={work} />
     </Layout>
   );
 };
