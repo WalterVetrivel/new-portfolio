@@ -81,6 +81,7 @@
   &-university {
     color: lighten($color-dark, 25%);
     font-size: 0.9rem;
+    margin-bottom: 1rem;
   }
 
   &-subtitle {
@@ -90,7 +91,7 @@
 
   &-description {
     text-align: justify;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   &-technology {

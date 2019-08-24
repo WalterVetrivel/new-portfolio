@@ -19,8 +19,8 @@ import Resume from '../images/projects/resume.png';
 const Portfolio = () => {
   const [headerText] = useState({
     title: `Welcome to my portfolio!`,
-    subtitle: `Scroll to check out my main projects.`,
-    subtitle2: `Also, please check out my Github using the link below.`,
+    subtitle: `Here, I showcase some of my major professional, academic and side projects.`,
+    subtitle2: `For more of my projects, please check out my Github.`,
     showPortfolioLink: false,
     showGithubLink: true,
     className: 'portfolio-hero',
@@ -28,7 +28,7 @@ const Portfolio = () => {
 
   const [projects] = useState([
     {
-      category: 'Main Projects',
+      category: 'Professional Projects',
       icon: faLaptopCode,
       projects: [
         {
@@ -65,7 +65,7 @@ const Portfolio = () => {
       icon: faGraduationCap,
       projects: [
         {
-          title: 'Event Organiser',
+          title: 'Event Booker',
           university: 'University of Canberra',
           technology: [
             'React',
@@ -74,16 +74,18 @@ const Portfolio = () => {
             'Ant Design',
             'Prisma',
             'Postgres',
+            'JWT',
+            'Stripe',
           ],
-          description: `An event organiser web app built using React with Ant Design UI components on the front-end and Node.js, Prisma and Postgres database on the back-end. Authentication is done using JWT and Stripe is used for processing payments. Project was buit for the unit "Technology Project PG" at University of Canberra.`,
+          description: `An event organisation web app built using React with Ant Design UI components on the front-end and Node.js, Prisma and Postgres database on the back-end. Authentication is done using JWT and Stripe is used for processing payments. Project was buit for the unit "Technology Project PG" at University of Canberra.`,
           repo: 'https://github.com/WalterVetrivel/technology_project_backend',
-          demoUrl: 'https://naughty-mayer-6297bf.netlify.com/',
+          demoUrl: null,
           image: EventOrganiser,
         },
         {
           title: 'Company Website Template',
           university: 'University of Canberra',
-          technology: ['Bootstrap 4', 'Laravel', 'MySQL'],
+          technology: ['Bootstrap 4', 'Laravel', 'MySQL', 'SASS'],
           description: `A multi-page, dynamic, responsive company website template built using Bootstrap 4, Laravel 5 and MySQL. Project was bulit for the unit "Software Engineering Practice G" at University of Canberra.`,
           repo: 'https://github.com/WalterVetrivel/sep_laravel_company_website',
           demoUrl: null,
@@ -106,7 +108,7 @@ const Portfolio = () => {
         {
           title: 'Bootstrap Resume Template',
           technology: ['Bootstrap 4', 'HTML5', 'CSS3', 'JavaScript'],
-          description: `A simple single-page responsive Resume template built using HTML5, CSS3, JavaScript and Bootstrap 4.`,
+          description: `A simple single-page responsive resume template built using HTML5, CSS3, JavaScript and Bootstrap 4.`,
           repo: 'https://github.com/WalterVetrivel/bootstrap_resume_1',
           demoUrl: 'https://hopeful-volhard-518e2d.netlify.com/',
           image: Resume,
