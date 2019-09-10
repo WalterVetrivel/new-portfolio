@@ -2,10 +2,26 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faBars } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+  const [links] = useState([
+    { url: '/', text: 'Home' },
+    { url: '/resume', text: 'Resume' },
+    { url: '/portfolio', text: 'Portfolio' },
+    { url: '/journey', text: 'Journey' },
+  ]);
+  const [external] = useState([
+    {
+      url: 'https://github.com/WalterVetrivel',
+      icon: faGithub,
+    },
+    {
+      url: 'https://www.linkedin.com/in/walter-vetrivel-selvakumar/',
+      icon: faLinkedin,
+    },
+  ]);
 
   return (
     <nav className="nav">
@@ -14,36 +30,25 @@ const Navbar = () => {
         Walter
       </Link>
       <ul className="nav-items">
-        <li className="nav-item">
-          <Link to="/" className="nav-link" activeClassName="active">
-            Home
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/resume" className="nav-link" activeClassName="active">
-            Resume
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/portfolio" className="nav-link" activeClassName="active">
-            Portfolio
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/journey" className="nav-link" activeClassName="active">
-            Journey
-          </Link>
-        </li>
-        <li className="nav-item">
-          <a
-            href="https://github.com/WalterVetrivel"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-link"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-        </li>
+        {links.map(link => (
+          <li className="nav-item" key={link.url}>
+            <Link to={link.url} className="nav-link" activeClassName="active">
+              {link.text}
+            </Link>
+          </li>
+        ))}
+        {external.map(link => (
+          <li className="nav-item" key={link.url}>
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
+            >
+              <FontAwesomeIcon icon={link.icon} />
+            </a>
+          </li>
+        ))}
       </ul>
       <button
         className="nav-toggle"

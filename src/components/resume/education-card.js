@@ -1,5 +1,7 @@
 import React from 'react';
 import EducationImg from '../../images/education.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAward } from '@fortawesome/free-solid-svg-icons';
 
 const EducationCard = props => (
   <div className="card education-card">
@@ -12,6 +14,12 @@ const EducationCard = props => (
       </p>
       <p className="education-gpa mb-h">GPA: {props.gpa}</p>
       <p className="education-description">{props.description}</p>
+      {props.award ? (
+        <p className="education-award">
+          <FontAwesomeIcon icon={faAward} />
+          <span>{props.award}</span>
+        </p>
+      ) : null}
     </div>
   </div>
 );

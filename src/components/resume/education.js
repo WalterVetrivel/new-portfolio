@@ -16,6 +16,7 @@ const Education = ({ education }) => (
           to={ed.to}
           gpa={ed.gpa}
           description={ed.description}
+          award={ed.award}
         />
       ))}
     </div>

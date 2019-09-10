@@ -112,6 +112,7 @@ const ResumePage = () => {
       to: 'Nov 2019',
       gpa: '6.5/7',
       description: `I studied subjects like Web Design and Programming, Software Technology, Enterprise and Cloud Computing, Project Management, Software Engineering Practice, Technology and Engineering Management, and developed not only technical skills, but also communication, presentation and team work skills through practical assessments.`,
+      award: `Two-time recipient of Dean's Excellence Award for academic excellence`,
     },
     {
       degree: 'Bachelor of Engineering Computer Science and Engineering',
