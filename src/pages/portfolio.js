@@ -12,6 +12,7 @@ import Andrews from '../images/projects/andrews.png';
 import Wishall from '../images/projects/wishall.png';
 import Selvakumar from '../images/projects/selvakumar.png';
 import Company from '../images/projects/company.png';
+import GithubFinder from '../images/projects/github-finder.png';
 import Recipes from '../images/projects/recipes.png';
 import EventOrganiser from '../images/projects/event-organiser.png';
 import Resume from '../images/projects/resume.png';
@@ -98,7 +99,7 @@ const PortfolioPage = () => {
           description: `A simple React app to search for Github users and view their recent repos.`,
           repo: 'https://github.com/WalterVetrivel/react_github_finder',
           demoUrl: 'https://walter-github-finder.netlify.com/',
-          image: Company,
+          image: GithubFinder,
         },
       ],
     },
