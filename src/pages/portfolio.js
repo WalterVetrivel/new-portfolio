@@ -91,6 +91,15 @@ const PortfolioPage = () => {
           demoUrl: null,
           image: Company,
         },
+        {
+          title: 'Github Finder',
+          university: 'Udemy',
+          technology: ['React'],
+          description: `A simple React app to search for Github users and view their recent repos.`,
+          repo: 'https://github.com/WalterVetrivel/react_github_finder',
+          demoUrl: 'https://walter-github-finder.netlify.com/',
+          image: Company,
+        },
       ],
     },
     {
@@ -102,7 +111,7 @@ const PortfolioPage = () => {
           technology: ['React'],
           description: `A simple react app to search for different recipes. Recipe data is fetched from an external API, "The Meal DB".`,
           repo: 'https://github.com/WalterVetrivel/react-recipe-search',
-          demoUrl: 'https://suspicious-kepler-5fa339.netlify.com/recipes',
+          demoUrl: 'https://walter-recipe-search.netlify.com/recipes',
           image: Recipes,
         },
         {
@@ -110,7 +119,7 @@ const PortfolioPage = () => {
           technology: ['Bootstrap 4', 'HTML5', 'CSS3', 'JavaScript'],
           description: `A simple single-page responsive resume template built using HTML5, CSS3, JavaScript and Bootstrap 4.`,
           repo: 'https://github.com/WalterVetrivel/bootstrap_resume_1',
-          demoUrl: 'https://hopeful-volhard-518e2d.netlify.com/',
+          demoUrl: 'https://walter-bootstrap-resume.netlify.com/',
           image: Resume,
         },
       ],
