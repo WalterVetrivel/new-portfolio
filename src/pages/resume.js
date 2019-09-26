@@ -32,7 +32,7 @@ const ResumePage = () => {
       subCategories: [
         {
           name: 'Programming languages',
-          skills: ['JavaScript', 'Java', 'PHP'],
+          skills: ['JavaScript', 'Java', 'PHP', 'Python'],
         },
       ],
     },
@@ -209,7 +209,7 @@ const ResumePage = () => {
         className={headerText.className}
       />
       <Skills skills={skills} />
-      <Education education={education} />
+      <Work work={work} />
       <Banner className="resume-banner">
         <h1 className="banner-text mb-0">
           I have also done some web development and programming courses on{' '}
@@ -220,11 +220,11 @@ const ResumePage = () => {
             rel="noopener noreferrer"
           >
             Udemy
-          </a>
-          .
+          </a>{' '}
+          in addition to my qualifications below.
         </h1>
       </Banner>
-      <Work work={work} />
+      <Education education={education} />
     </Layout>
   );
 };
