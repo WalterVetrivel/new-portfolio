@@ -13,6 +13,7 @@ import Wishall from '../images/projects/wishall.png';
 import Selvakumar from '../images/projects/selvakumar.png';
 import Company from '../images/projects/company.png';
 import GithubFinder from '../images/projects/github-finder.png';
+import ContactKeeper from '../images/projects/contact-keeper.png';
 import Recipes from '../images/projects/recipes.png';
 import EventOrganiser from '../images/projects/event-organiser.png';
 import Resume from '../images/projects/resume.png';
@@ -100,6 +101,16 @@ const PortfolioPage = () => {
           repo: 'https://github.com/WalterVetrivel/react_github_finder',
           demoUrl: 'https://walter-github-finder.netlify.com/',
           image: GithubFinder,
+        },
+        {
+          title: 'Contact Keeper',
+          university: 'Udemy',
+          technology: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
+          description:
+            'A full stack app that enables users to register for an account and store their contacts.',
+          repo: 'https://github.com/WalterVetrivel/mern-contact-keeper',
+          demoUrl: 'https://walter-mern-contact-keeper.herokuapp.com',
+          image: ContactKeeper,
         },
       ],
     },
